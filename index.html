@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/79e6e0134436501.61d5afc8519b2.jpg"> 
+    <title>Silent Planet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Silent Planet</h1>
+        <p>Tabiatni his qiling va jimjitlikdan zavqlaning.</p>
+        <div class="sound-controls">
+            <button onclick="playSound('rain')">🌧️ Yomg‘ir</button>
+            <button onclick="playSound('birds')">🔈Shamol esishi</button>
+            <button onclick="playSound('ocean')">🌊 Dengiz</button>
+            <button onclick="stopSound()">⏸️ Tovushni to‘xtatish</button>
+        </div>
+    </div>
+
+    <!-- Audio elementi -->
+    <audio id="audio" loop></audio>
+
+    <script>
+        const audio = document.getElementById("audio");
+
+        function playSound(type) {
+            if (type === "rain") {
+                audio.src = "https://www.soundjay.com/nature/rain-01.mp3"; 
+            } else if (type === "windy") {  
+                audio.src = "https://cdn.pixabay.com/download/audio/2021/08/04/audio_4994c4975e.mp3" 
+            } else if (type === "ocean") {
+                audio.src = "https://www.soundjay.com/nature/ocean-waves-1.mp3"; 
+            }
+            audio.play();
+        }
+
+        function stopSound() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+</html>

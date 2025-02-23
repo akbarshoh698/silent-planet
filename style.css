@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.sound-controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sound-controls button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/20/de/89/20de8953a3d8ba249123c47903d19f3c.jpg");
+    background-color: #cccccc;
+}
